@@ -1,0 +1,5 @@
+# gem5 is its own separate git clone (upstream: gem5/gem5) — not part of this repo
+gem5/
+
+# macOS
+.DS_Store
