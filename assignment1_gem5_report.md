@@ -9,8 +9,6 @@
 
 ## Part 1: GitHub Account Creation
 
-I already had a GitHub account prior to this assignment, which I use for version control on my coursework and personal projects (including my keyboard firmware/reverse-engineering work). My profile includes a profile picture and a short bio describing my background as a hardware engineer.
-
 *(If your instructor wants proof of this step, add a screenshot of your GitHub profile page here.)*
 
 ![GitHub profile page for sasha-ichen-uc](images/assignment1/screenshot1.png)
