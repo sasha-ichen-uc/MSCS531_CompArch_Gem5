@@ -1,6 +1,6 @@
 # Assignment 1: GitHub Account Creation and Installing and Building gem5
 
-**Name:** Sasha Chen
+**Name:** I Chen
 **Course:** MSCS531 – Computer Architecture
 
 > **Note on how this was produced:** Every command, warning, error, and stat below is real output from actually cloning, building (X86 target), and running gem5 directly on my own Mac (Apple Silicon, macOS, 6 CPU cores, 8 GB RAM) using a conda environment named `gem5` that already had `clang`, `scons`, and `python` installed. The gem5 source tree is the same clone already sitting in this `MSCS531_CompArch` folder (commit `cbc94c1`, `stable` branch). The build did not go smoothly on the first try — getting SCons's `clang`/`clang++` toolchain and a couple of conda-forge shared libraries to link and run correctly on macOS took real troubleshooting (see Section 4.2), which is documented here exactly as it happened. All five screenshots below were captured directly from that same terminal on my own machine.
@@ -8,8 +8,6 @@
 ---
 
 ## Part 1: GitHub Account Creation
-
-*(If your instructor wants proof of this step, add a screenshot of your GitHub profile page here.)*
 
 ![GitHub profile page for sasha-ichen-uc](images/assignment1/screenshot1.png)
 
