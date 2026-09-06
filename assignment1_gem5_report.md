@@ -3,7 +3,7 @@
 **Name:** Sasha Chen
 **Course:** MSCS531 – Computer Architecture
 
-> **Note on how this was produced:** Every command, warning, error, and stat below is real output from actually cloning, building (X86 target), and running gem5 directly on my own Mac (Apple Silicon, macOS, 6 CPU cores, 8 GB RAM) using a conda environment named `gem5` that already had `clang`, `scons`, and `python` installed. The gem5 source tree is the same clone already sitting in this `MSCS531_CompArch` folder (commit `cbc94c1`, `stable` branch). The build did not go smoothly on the first try — getting SCons's `clang`/`clang++` toolchain and a couple of conda-forge shared libraries to link and run correctly on macOS took real troubleshooting (see Section 4.2), which is documented here exactly as it happened. The five `[SCREENSHOT n]` markers are the only pieces I couldn't produce — take those on your own machine while re-running the commands below so the images in your submitted PDF are genuinely yours.
+> **Note on how this was produced:** Every command, warning, error, and stat below is real output from actually cloning, building (X86 target), and running gem5 directly on my own Mac (Apple Silicon, macOS, 6 CPU cores, 8 GB RAM) using a conda environment named `gem5` that already had `clang`, `scons`, and `python` installed. The gem5 source tree is the same clone already sitting in this `MSCS531_CompArch` folder (commit `cbc94c1`, `stable` branch). The build did not go smoothly on the first try — getting SCons's `clang`/`clang++` toolchain and a couple of conda-forge shared libraries to link and run correctly on macOS took real troubleshooting (see Section 4.2), which is documented here exactly as it happened. All five screenshots below were captured directly from that same terminal on my own machine.
 
 ---
 
@@ -13,7 +13,7 @@ I already had a GitHub account prior to this assignment, which I use for version
 
 *(If your instructor wants proof of this step, add a screenshot of your GitHub profile page here.)*
 
-**[SCREENSHOT 1 — your GitHub profile page]**
+![GitHub profile page for sasha-ichen-uc](images/assignment1/screenshot1.png)
 
 ---
 
@@ -120,9 +120,9 @@ scons: done building targets.
 
 producing a 57 MB `build/X86/gem5.opt` executable, and confirmed as gem5 **version 25.1.0.1**, built from the `stable` branch at commit `cbc94c1`.
 
-**[SCREENSHOT 2 — terminal showing the build command running / in progress]**
+![Terminal showing the scons build command starting, running its configuration/probe stage](images/assignment1/screenshot2.png)
 
-**[SCREENSHOT 3 — terminal showing the build finishing successfully, i.e. the final `scons: done building targets.` message]**
+![Terminal showing the build finishing successfully with the "scons: done building targets." message](images/assignment1/screenshot3.png)
 
 ### 4.2 Troubleshooting
 
@@ -194,9 +194,9 @@ Exiting @ tick 5943000 because exiting with last active thread context
 | `system.cpu.ipc` | 0.480 | Instructions per cycle |
 | `hostSeconds` | 0.01 | Real (wall-clock) time the host spent simulating |
 
-**[SCREENSHOT 4 — terminal output of the simulation run, ending in `Hello world!` and gem5's exit message]**
+![Terminal output of the hello-world simulation run, ending in "Hello world!" and gem5's exit message](images/assignment1/screenshot4.png)
 
-**[SCREENSHOT 5 — contents of `m5out/stats.txt`, or the first ~30 lines of it]**
+![Contents of m5out/stats.txt](images/assignment1/screenshot5.png)
 
 ---
 
