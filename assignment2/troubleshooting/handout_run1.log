@@ -1,0 +1,16 @@
+warn: Base 10 memory/cache size 512MB will be cast to base 2 size 512MiB.
+NameError: name 'L1_ICache' is not defined
+
+At:
+  run_hello_handout.py(17): <module>
+  src/python/m5/main.py(687): main
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 25.1.0.1
+gem5 compiled Sep  6 2026 15:11:15
+gem5 started Sep 20 2026 11:53:00
+gem5 executing on Sashas-MacBook.local, pid 94395
+command line: /Users/sasha/MSCS531_CompArch/gem5/build/X86/gem5.opt --outdir=m5out_handout run_hello_handout.py
+
+info: Standard input is not a terminal, disabling listeners.

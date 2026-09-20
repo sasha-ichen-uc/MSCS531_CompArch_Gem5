@@ -1,0 +1,17 @@
+ValueError: /private/tmp/claude-501/-Users-sasha-MSCS531-CompArch-gem5/26001388-0668-47df-9ee2-d5cf27c4ce6e/scratchpad/hello_native: the file is not an object file compatible with gem5.
+
+At:
+  src/sim/Workload.py(153): find_compatible
+  src/sim/Workload.py(170): init_compatible
+  run_hello.py(73): <module>
+  src/python/m5/main.py(687): main
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 25.1.0.1
+gem5 compiled Sep  6 2026 15:11:15
+gem5 started Sep 20 2026 11:56:31
+gem5 executing on Sashas-MacBook.local, pid 94651
+command line: ../gem5/build/X86/gem5.opt --outdir=/private/tmp/claude-501/-Users-sasha-MSCS531-CompArch-gem5/26001388-0668-47df-9ee2-d5cf27c4ce6e/scratchpad/m5out_native run_hello.py /private/tmp/claude-501/-Users-sasha-MSCS531-CompArch-gem5/26001388-0668-47df-9ee2-d5cf27c4ce6e/scratchpad/hello_native
+
+info: Standard input is not a terminal, disabling listeners.
