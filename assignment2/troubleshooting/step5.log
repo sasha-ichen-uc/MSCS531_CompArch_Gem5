@@ -1,0 +1,47 @@
+warn: Base 10 memory/cache size 512MB will be cast to base 2 size 512MiB.
+warn: Base 10 memory/cache size 32kB will be cast to base 2 size 32KiB.
+warn: Base 10 memory/cache size 32kB will be cast to base 2 size 32KiB.
+Global frequency set at 1000000000000 ticks per second
+warn: No dot file generated. Please install pydot to generate the dot file and pdf.
+src/mem/dram_interface.cc:692: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+src/arch/x86/linux/se_workload.cc:76: warn: Unknown operating system; assuming Linux.
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+src/arch/x86/interrupts.cc:331: panic: panic condition !intRequestPort.isConnected() occurred: Int port not connected to anything!
+Memory Usage: 436842272 KBytes
+Program aborted at tick 0
+--- BEGIN LIBC BACKTRACE ---
+0   gem5.opt                            0x000000010343f67c _ZN4gem515print_backtraceEv + 44
+1   gem5.opt                            0x00000001034529d8 _ZN4gem512abortHandlerEi + 68
+2   libsystem_platform.dylib            0x0000000181de57a4 _sigtramp + 56
+3   libsystem_pthread.dylib             0x0000000181ddb8d8 pthread_kill + 296
+4   libsystem_c.dylib                   0x0000000181ce2790 abort + 148
+5   gem5.opt                            0x0000000102828ae4 _ZN4gem55linux8onUDelayEPNS_13ThreadContextEyyy + 0
+6   gem5.opt                            0x0000000102c133ec _ZN4gem56X86ISA10Interrupts4initEv + 156
+7   gem5.opt                            0x00000001028d2010 _ZZN8pybind1112cpp_function10initializeIZNS0_C1IvN4gem59SimObjectEJEJNS_4nameENS_9is_methodENS_7siblingEEEEMT0_FT_DpT1_EDpRKT2_EUlPS4_E_vJSI_EJS5_S6_S7_EEEvOS9_PFS8_SB_ESH_ENKUlRNS_6detail13function_callEE_clESP_ + 116
+8   gem5.opt                            0x00000001028d1f90 _ZZN8pybind1112cpp_function10initializeIZNS0_C1IvN4gem59SimObjectEJEJNS_4nameENS_9is_methodENS_7siblingEEEEMT0_FT_DpT1_EDpRKT2_EUlPS4_E_vJSI_EJS5_S6_S7_EEEvOS9_PFS8_SB_ESH_ENUlRNS_6detail13function_callEE_8__invokeESP_ + 24
+9   gem5.opt                            0x000000010284a790 _ZN8pybind1112cpp_function10dispatcherEP7_objectS2_S2_ + 4020
+10  libpython3.9.dylib                  0x000000010670bb24 cfunction_call + 80
+11  libpython3.9.dylib                  0x00000001066bb838 _PyObject_MakeTpCall + 616
+12  libpython3.9.dylib                  0x00000001066bf2c4 method_vectorcall + 268
+13  libpython3.9.dylib                  0x00000001067b048c call_function + 516
+14  libpython3.9.dylib                  0x00000001067acdf8 _PyEval_EvalFrameDefault + 25232
+15  libpython3.9.dylib                  0x00000001066bc530 function_code_fastcall + 116
+16  libpython3.9.dylib                  0x00000001067b048c call_function + 516
+17  libpython3.9.dylib                  0x00000001067ace70 _PyEval_EvalFrameDefault + 25352
+18  libpython3.9.dylib                  0x00000001066bc530 function_code_fastcall + 116
+19  libpython3.9.dylib                  0x00000001067b048c call_function + 516
+20  libpython3.9.dylib                  0x00000001067acdf8 _PyEval_EvalFrameDefault + 25232
+21  libpython3.9.dylib                  0x00000001067a6560 _PyEval_EvalCode + 2916
+22  libpython3.9.dylib                  0x00000001067a59f0 PyEval_EvalCode + 76
+23  libpython3.9.dylib                  0x00000001067a15c4 builtin_exec + 852
+24  libpython3.9.dylib                  0x000000010670c8bc cfunction_vectorcall_FASTCALL + 212
+25  libpython3.9.dylib                  0x00000001067b048c call_function + 516
+26  libpython3.9.dylib                  0x00000001067ace70 _PyEval_EvalFrameDefault + 25352
+27  libpython3.9.dylib                  0x00000001066bc530 function_code_fastcall + 116
+28  gem5.opt                            0x000000010289f920 _ZNK8pybind116detail10object_apiINS0_8accessorINS0_17accessor_policies8str_attrEEEEclILNS_19return_value_policyE1EJEEENS_6objectEDpOT0_ + 68
+29  gem5.opt                            0x0000000103454db8 main + 276
+30  dyld                                0x0000000181a1fda4 start + 6992
+--- END LIBC BACKTRACE ---
+For more info on how to address this issue, please visit https://www.gem5.org/documentation/general_docs/common-errors/ 
+

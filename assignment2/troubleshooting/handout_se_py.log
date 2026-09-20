@@ -1,0 +1,11 @@
+fatal: The 'configs/example/se.py' script has been deprecated. It can be found in 'configs/deprecated/example' if required. Its usage should be avoided as it will be removed in future releases of gem5.
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 25.1.0.1
+gem5 compiled Sep  6 2026 15:11:15
+gem5 started Sep 20 2026 11:54:45
+gem5 executing on Sashas-MacBook.local, pid 94530
+command line: ./build/X86/gem5.opt --outdir=/Users/sasha/MSCS531_CompArch/assignment2/m5out_se configs/example/se.py -c /Users/sasha/MSCS531_CompArch/assignment2/hello
+
+info: Standard input is not a terminal, disabling listeners.
