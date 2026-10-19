@@ -108,6 +108,31 @@ def add_table(headers, rows, caption=None):
     doc.add_paragraph()  # spacing after table
     return table
 
+IMAGES = os.path.expanduser("~/MSCS531_CompArch/assignment4/images")
+
+def add_figure(filename, caption, width=Inches(5.5)):
+    """Add a centered figure with caption below."""
+    path = os.path.join(IMAGES, filename)
+    if not os.path.exists(path):
+        add_body(f"[Figure: {caption} — image file not found: {filename}]")
+        return
+    p = doc.add_paragraph()
+    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    run = p.add_run()
+    run.add_picture(path, width=width)
+    cap = doc.add_paragraph()
+    cap.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    cap.paragraph_format.space_after = Pt(12)
+    r1 = cap.add_run("Figure. ")
+    r1.bold = True
+    r1.italic = True
+    r1.font.size = Pt(10)
+    r1.font.name = 'Times New Roman'
+    r2 = cap.add_run(caption)
+    r2.italic = True
+    r2.font.size = Pt(10)
+    r2.font.name = 'Times New Roman'
+
 def add_numbered_item(number, bold_text, rest_text):
     p = doc.add_paragraph()
     p.paragraph_format.first_line_indent = Inches(0.5)
@@ -194,6 +219,8 @@ add_bullet_item("branch_heavy", "A branch-intensive workload using data-dependen
 
 add_body("The GitHub repository containing all configuration files, workloads, scripts, and results is available at: https://github.com/sasha-ichen-uc/MSCS531_CompArch_Gem5.git")
 
+add_figure("Assignment4_screenshot1.png", "gem5 v25.1.0.1 running a Hello World test program in SE mode, confirming a working simulator installation", width=Inches(5.0))
+
 # ── Task 1-2 ──────────────────────────────────────────────────────
 doc.add_heading("Task 1–2: Basic Pipeline Simulation and Performance Metrics", level=2)
 
@@ -208,9 +235,13 @@ add_table(
     "Task 1–2: In-Order vs. Out-of-Order Pipeline Performance",
 )
 
+add_figure("task1_2_pipeline.png", "CPI and IPC comparison: MinorCPU (in-order) vs. O3CPU (out-of-order)")
+
 add_body("The O3CPU completed the same workload in 36.8× fewer cycles than MinorCPU. The MinorCPU’s CPI of 34.19 reflects the severe penalty of serializing x86 micro-ops through an in-order pipeline: each complex x86 instruction decomposes into approximately 2.2 micro-ops (237,387 / 107,374), and the in-order pipeline stalls on every data dependency, unable to execute independent instructions out of order. The O3CPU’s CPI of 0.93 (IPC > 1.0) demonstrates that out-of-order execution, register renaming, and speculative execution effectively exploit instruction-level parallelism even within a single thread.")
 
 add_body("The pipeline visualization, generated using gem5’s O3PipeView trace and the o3-pipeview.py utility, shows the progression of instructions through fetch (f), decode (d), rename (n), dispatch (p), issue (i), complete (c), and retire (r) stages. The trace reveals multiple instructions in-flight simultaneously, overlapping across pipeline stages—a direct visualization of ILP exploitation. Store completions (s) appear after retirement, reflecting the write-buffer mechanism.")
+
+add_figure("Assignment4_screenshot2.png", "O3PipeView pipeline visualization showing instruction overlap across fetch, decode, rename, dispatch, issue, complete, and retire stages", width=Inches(5.5))
 
 # ── Task 3 ────────────────────────────────────────────────────────
 doc.add_heading("Task 3: Impact of Branch Prediction", level=2)
@@ -227,6 +258,8 @@ add_table(
     ],
     "Task 3: Branch Prediction Comparison (O3CPU, width 4, int_compute)",
 )
+
+add_figure("task3_branch_prediction.png", "IPC and mispredictions across four branch predictors (O3CPU, width 4)")
 
 add_body("The results reveal a dramatic performance gap. Tournament and TAGE predictors achieved CPI near 0.93, while the static predictor suffered CPI of 1.65—a 1.78× slowdown. The static predictor caused 6,438 mispredictions and 17,538 squashed instructions, wasting pipeline work on incorrectly speculated paths. TAGE achieved the fewest mispredictions (210) and the highest IPC (1.082), confirming the theoretical advantage of tagged geometric-length history tables discussed in the literature review (Schall et al., 2024).")
 
@@ -261,6 +294,9 @@ add_table(
     "Task 4: Speedup Relative to Single-Issue (Width 1)",
 )
 
+add_figure("task4_superscalar_ipc.png", "IPC vs. issue width across four benchmarks")
+add_figure("task4_superscalar_speedup.png", "Speedup vs. issue width (relative to single-issue), with ideal linear scaling")
+
 add_body("The fp_compute workload scaled best with issue width, achieving 4.38× speedup at width 8. Floating-point multiply, add, and divide operations exhibit high instruction-level parallelism because successive loop iterations operate on independent array elements, allowing the processor to issue multiple FP operations simultaneously. This confirms the theoretical prediction that compute-bound workloads with independent operations benefit most from wider issue.")
 
 add_body("In stark contrast, mem_compute gained only 1.28× at width 8. The memory-bound workload’s performance is dominated by cache miss latency: once the pipeline stalls waiting for data from main memory, additional issue width provides no benefit because there are no ready instructions to fill the empty slots. The cycles per instruction remained above 2.5 regardless of width, reflecting the fundamental memory wall.")
@@ -283,11 +319,15 @@ add_table(
     "Task 5: SMT Performance (O3CPU, Width 8, int_compute)",
 )
 
+add_figure("task5_smt.png", "SMT throughput (total IPC) and per-thread latency (CPI) comparison")
+
 add_body("With SMT, two threads completed 214,748 total instructions in 137,161 cycles, yielding a total IPC of 1.566 compared to 1.508 for a single thread—a modest 3.8% throughput improvement. Alternatively, SMT completed double the work in only 1.93× the time, giving an effective speedup of 1.04× over sequential execution of both threads.")
 
 add_body("The limited improvement stems from resource contention: both threads execute identical integer-heavy code, competing for the same ALU functional units, ROB entries, and issue queue slots. When one thread stalls, the other can use the freed resources, but because both threads have similar stall patterns, there is little complementary behavior to exploit. Muralidhar et al. (2022) note that SMT throughput gains are highest when threads have complementary resource demands (e.g., one compute-bound and one memory-bound). In production processors, Intel’s Hyper-Threading typically yields 15–30% throughput improvement with diverse workload mixes.")
 
 add_body("Per-thread performance degraded significantly: each thread’s CPI increased from 0.663 to 1.278 (1.93× slowdown) due to resource sharing. This trade-off—higher total throughput at the cost of individual thread latency—is the fundamental SMT design tension. For latency-sensitive single-threaded workloads, SMT can be counterproductive.")
+
+add_figure("Assignment4_Screenthot3.png", "Complete gem5 simulation results across all experiments: pipeline comparison, branch prediction, superscalar scaling, and SMT", width=Inches(5.0))
 
 # ── Key Questions ──────────────────────────────────────────────────
 doc.add_heading("Discussion: Key Questions", level=2)

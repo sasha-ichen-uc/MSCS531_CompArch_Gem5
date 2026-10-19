@@ -1,0 +1,26 @@
+Global frequency set at 1000000000000 ticks per second
+warn: board.workload.acpi_description_table_pointer.rsdt adopting orphan SimObject param 'entries'
+warn: No dot file generated. Please install pydot to generate the dot file and pdf.
+src/mem/dram_interface.cc:692: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (4096 Mbytes)
+src/sim/kernel_workload.cc:46: info: kernel located at: /Users/sasha/MSCS531_CompArch/assignment3/fs/vmlinux-5.4.49
+      0: board.pc.south_bridge.cmos.rtc: Real-time clock set to Sun Jan  1 00:00:00 2012
+src/dev/serial/terminal.cc:174: warn: Sockets disabled, not accepting terminal connections
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/dev/intel_8254_timer.cc:128: warn: Reading current count from inactive timer.
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 25.1.0.1
+gem5 compiled Sep  6 2026 15:11:15
+gem5 started Oct  4 2026 19:02:36
+gem5 executing on Sashas-MacBook.local, pid 66620
+command line: ../gem5/build/X86/gem5.opt --outdir=runs/fs_tlb16 run_fs_tlb.py --tlb-size 16
+
+info: Standard input is not a terminal, disabling listeners.
+build/X86/arch/x86/generated/exec-ns.cc.inc:27: warn: instruction 'fninit' unimplemented
+build/X86/arch/x86/generated/exec-ns.cc.inc:27: warn: instruction 'sgdt_Ms' unimplemented
+build/X86/arch/x86/generated/exec-ns.cc.inc:27: warn: instruction 'fwait' unimplemented
+src/dev/x86/pc.cc:117: warn: Don't know what interrupt to clear for console.
+src/dev/x86/i8042.cc:291: warn: Write to unknown i8042 (keyboard controller) command port.
+src/arch/generic/debugfaults.hh:145: warn: MOVNTDQ: Ignoring non-temporal hint, modeling as cacheable!

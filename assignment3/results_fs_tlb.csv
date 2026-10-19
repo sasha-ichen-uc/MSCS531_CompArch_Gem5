@@ -1,0 +1,2 @@
+run,tlb_entries,dtb_read_acc,dtb_write_acc,dtb_acc,dtb_read_miss,dtb_write_miss,dtb_miss,itb_exec_acc,itb_miss,simInsts,simTicks,dtb_miss_rate,itb_miss_rate
+fs_tlb4,4,608569,487983,1096552,65300,5902,71202,2708824,4618,2067548,5604339000,0.0649,0.001705
