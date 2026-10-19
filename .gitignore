@@ -3,3 +3,18 @@ gem5/
 
 # macOS
 .DS_Store
+
+# Large gem5 FS boot artifacts (kernel, disk image) - too big to commit
+assignment3/fs/
+
+# Assignment 4 - compiled workload binaries (can be rebuilt)
+assignment4/workloads/int_compute
+assignment4/workloads/fp_compute
+assignment4/workloads/mem_compute
+assignment4/workloads/branch_heavy
+assignment4/workloads/smt_thread
+
+# gem5 output directories (keep CSVs and pipeline view, skip raw stats)
+assignment4/results/*/config.*
+assignment4/results/*/fs/
+assignment4/results/*/citations.bib

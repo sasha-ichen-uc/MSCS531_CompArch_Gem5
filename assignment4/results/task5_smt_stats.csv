@@ -1,0 +1,3 @@
+experiment,cycles,cpi,ipc,insts,ops,bp_misses,thread1_insts
+1 thread,71209.0,0.663187,1.507871,107374.0,237387.0,,
+2 threads SMT,137161.0,0.638707,1.565664,107374.0,237387.0,,107374.0

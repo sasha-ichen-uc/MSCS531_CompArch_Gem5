@@ -1,0 +1,637 @@
+O3PipeView:fetch:841000:0x010053a3:0:620:  MOV_M_R : st   sil, DS:[rdx + rcx + 0x4]
+O3PipeView:decode:882000
+O3PipeView:rename:883000
+O3PipeView:dispatch:889000
+O3PipeView:issue:889000
+O3PipeView:complete:890000
+O3PipeView:retire:892000:store:1001000
+O3PipeView:fetch:896000:0x010053be:0:669:  JNZ_I : rdip   t1, t1
+O3PipeView:decode:993000
+O3PipeView:rename:994000
+O3PipeView:dispatch:996000
+O3PipeView:issue:996000
+O3PipeView:complete:997000
+O3PipeView:retire:1001000:store:0
+O3PipeView:fetch:896000:0x010053b7:0:666:  ADD_R_I : limm   t1, 0x8
+O3PipeView:decode:993000
+O3PipeView:rename:994000
+O3PipeView:dispatch:996000
+O3PipeView:issue:996000
+O3PipeView:complete:997000
+O3PipeView:retire:999000:store:0
+O3PipeView:fetch:841000:0x010053a8:0:621:  MOV_M_R : st   sil, DS:[rdx + rcx + 0x5]
+O3PipeView:decode:882000
+O3PipeView:rename:883000
+O3PipeView:dispatch:891000
+O3PipeView:issue:891000
+O3PipeView:complete:892000
+O3PipeView:retire:894000:store:1003000
+O3PipeView:fetch:897000:0x010053be:1:670:  JNZ_I : limm   t2, 0xffffffffffffffd0
+O3PipeView:decode:994000
+O3PipeView:rename:995000
+O3PipeView:dispatch:997000
+O3PipeView:issue:997000
+O3PipeView:complete:998000
+O3PipeView:retire:1001000:store:0
+O3PipeView:fetch:896000:0x010053b7:1:667:  ADD_R_I : add   rdx, rdx, t1
+O3PipeView:decode:993000
+O3PipeView:rename:994000
+O3PipeView:dispatch:996000
+O3PipeView:issue:997000
+O3PipeView:complete:998000
+O3PipeView:retire:1000000:store:0
+O3PipeView:fetch:896000:0x010053bb:0:668:  CMP_R_R : sub   t0, rdi, rdx
+O3PipeView:decode:993000
+O3PipeView:rename:994000
+O3PipeView:dispatch:996000
+O3PipeView:issue:998000
+O3PipeView:complete:999000
+O3PipeView:retire:1001000:store:0
+O3PipeView:fetch:849000:0x010053ad:0:622:  MOV_M_R : st   sil, DS:[rdx + rcx + 0x6]
+O3PipeView:decode:883000
+O3PipeView:rename:884000
+O3PipeView:dispatch:892000
+O3PipeView:issue:892000
+O3PipeView:complete:893000
+O3PipeView:retire:895000:store:1005000
+O3PipeView:fetch:897000:0x010053be:2:671:  JNZ_I : wrip   t1, t2
+O3PipeView:decode:994000
+O3PipeView:rename:995000
+O3PipeView:dispatch:997000
+O3PipeView:issue:999000
+O3PipeView:complete:1000000
+O3PipeView:retire:1002000:store:0
+O3PipeView:fetch:849000:0x010053b2:0:623:  MOV_M_R : st   sil, DS:[rdx + rcx + 0x7]
+O3PipeView:decode:883000
+O3PipeView:rename:884000
+O3PipeView:dispatch:894000
+O3PipeView:issue:894000
+O3PipeView:complete:895000
+O3PipeView:retire:897000:store:1007000
+O3PipeView:fetch:853000:0x01005390:0:630:  MOV_M_R : st   sil, DS:[rdx + rcx]
+O3PipeView:decode:895000
+O3PipeView:rename:896000
+O3PipeView:dispatch:898000
+O3PipeView:issue:898000
+O3PipeView:complete:899000
+O3PipeView:retire:901000:store:1009000
+O3PipeView:fetch:853000:0x01005394:0:631:  MOV_M_R : st   sil, DS:[rdx + rcx + 0x1]
+O3PipeView:decode:895000
+O3PipeView:rename:896000
+O3PipeView:dispatch:899000
+O3PipeView:issue:899000
+O3PipeView:complete:900000
+O3PipeView:retire:902000:store:1011000
+O3PipeView:fetch:853000:0x01005399:0:632:  MOV_M_R : st   sil, DS:[rdx + rcx + 0x2]
+O3PipeView:decode:895000
+O3PipeView:rename:896000
+O3PipeView:dispatch:901000
+O3PipeView:issue:901000
+O3PipeView:complete:902000
+O3PipeView:retire:904000:store:1013000
+O3PipeView:fetch:853000:0x0100539e:0:633:  MOV_M_R : st   sil, DS:[rdx + rcx + 0x3]
+O3PipeView:decode:895000
+O3PipeView:rename:896000
+O3PipeView:dispatch:903000
+O3PipeView:issue:903000
+O3PipeView:complete:904000
+O3PipeView:retire:906000:store:1015000
+O3PipeView:fetch:912000:0x010053b7:0:680:  ADD_R_I : limm   t1, 0x8
+O3PipeView:decode:997000
+O3PipeView:rename:998000
+O3PipeView:dispatch:1009000
+O3PipeView:issue:1009000
+O3PipeView:complete:1010000
+O3PipeView:retire:1012000:store:0
+O3PipeView:fetch:912000:0x010053b7:1:681:  ADD_R_I : add   rdx, rdx, t1
+O3PipeView:decode:997000
+O3PipeView:rename:998000
+O3PipeView:dispatch:1009000
+O3PipeView:issue:1010000
+O3PipeView:complete:1011000
+O3PipeView:retire:1013000:store:0
+O3PipeView:fetch:863000:0x010053a3:0:634:  MOV_M_R : st   sil, DS:[rdx + rcx + 0x4]
+O3PipeView:decode:896000
+O3PipeView:rename:897000
+O3PipeView:dispatch:905000
+O3PipeView:issue:905000
+O3PipeView:complete:906000
+O3PipeView:retire:908000:store:1017000
+O3PipeView:fetch:913000:0x010053be:1:684:  JNZ_I : limm   t2, 0xffffffffffffffd0
+O3PipeView:decode:1008000
+O3PipeView:rename:1009000
+O3PipeView:dispatch:1011000
+O3PipeView:issue:1011000
+O3PipeView:complete:1012000
+O3PipeView:retire:1014000:store:0
+O3PipeView:fetch:913000:0x010053be:0:683:  JNZ_I : rdip   t1, t1
+O3PipeView:decode:1008000
+O3PipeView:rename:1009000
+O3PipeView:dispatch:1011000
+O3PipeView:issue:1011000
+O3PipeView:complete:1012000
+O3PipeView:retire:1014000:store:0
+O3PipeView:fetch:913000:0x010053bb:0:682:  CMP_R_R : sub   t0, rdi, rdx
+O3PipeView:decode:1008000
+O3PipeView:rename:1009000
+O3PipeView:dispatch:1011000
+O3PipeView:issue:1011000
+O3PipeView:complete:1012000
+O3PipeView:retire:1014000:store:0
+O3PipeView:fetch:913000:0x010053be:2:685:  JNZ_I : wrip   t1, t2
+O3PipeView:decode:1008000
+O3PipeView:rename:1009000
+O3PipeView:dispatch:1011000
+O3PipeView:issue:1012000
+O3PipeView:complete:1013000
+O3PipeView:retire:1015000:store:0
+O3PipeView:fetch:863000:0x010053a8:0:635:  MOV_M_R : st   sil, DS:[rdx + rcx + 0x5]
+O3PipeView:decode:896000
+O3PipeView:rename:897000
+O3PipeView:dispatch:907000
+O3PipeView:issue:907000
+O3PipeView:complete:908000
+O3PipeView:retire:910000:store:1019000
+O3PipeView:fetch:863000:0x010053ad:0:636:  MOV_M_R : st   sil, DS:[rdx + rcx + 0x6]
+O3PipeView:decode:896000
+O3PipeView:rename:897000
+O3PipeView:dispatch:908000
+O3PipeView:issue:908000
+O3PipeView:complete:909000
+O3PipeView:retire:911000:store:1021000
+O3PipeView:fetch:863000:0x010053b2:0:637:  MOV_M_R : st   sil, DS:[rdx + rcx + 0x7]
+O3PipeView:decode:896000
+O3PipeView:rename:897000
+O3PipeView:dispatch:910000
+O3PipeView:issue:910000
+O3PipeView:complete:911000
+O3PipeView:retire:913000:store:1023000
+O3PipeView:fetch:866000:0x01005390:0:644:  MOV_M_R : st   sil, DS:[rdx + rcx]
+O3PipeView:decode:910000
+O3PipeView:rename:911000
+O3PipeView:dispatch:913000
+O3PipeView:issue:914000
+O3PipeView:complete:915000
+O3PipeView:retire:918000:store:1025000
+O3PipeView:fetch:866000:0x01005394:0:645:  MOV_M_R : st   sil, DS:[rdx + rcx + 0x1]
+O3PipeView:decode:910000
+O3PipeView:rename:911000
+O3PipeView:dispatch:915000
+O3PipeView:issue:915000
+O3PipeView:complete:916000
+O3PipeView:retire:918000:store:1027000
+O3PipeView:fetch:866000:0x01005399:0:646:  MOV_M_R : st   sil, DS:[rdx + rcx + 0x2]
+O3PipeView:decode:914000
+O3PipeView:rename:915000
+O3PipeView:dispatch:917000
+O3PipeView:issue:917000
+O3PipeView:complete:918000
+O3PipeView:retire:920000:store:1029000
+O3PipeView:fetch:866000:0x0100539e:0:647:  MOV_M_R : st   sil, DS:[rdx + rcx + 0x3]
+O3PipeView:decode:914000
+O3PipeView:rename:915000
+O3PipeView:dispatch:919000
+O3PipeView:issue:919000
+O3PipeView:complete:920000
+O3PipeView:retire:922000:store:1031000
+O3PipeView:fetch:928000:0x010053b7:0:694:  ADD_R_I : limm   t1, 0x8
+O3PipeView:decode:1018000
+O3PipeView:rename:1019000
+O3PipeView:dispatch:1026000
+O3PipeView:issue:1026000
+O3PipeView:complete:1027000
+O3PipeView:retire:1029000:store:0
+O3PipeView:fetch:867000:0x010053a3:0:648:  MOV_M_R : st   sil, DS:[rdx + rcx + 0x4]
+O3PipeView:decode:914000
+O3PipeView:rename:915000
+O3PipeView:dispatch:921000
+O3PipeView:issue:921000
+O3PipeView:complete:922000
+O3PipeView:retire:924000:store:1033000
+O3PipeView:fetch:928000:0x010053be:0:697:  JNZ_I : rdip   t1, t1
+O3PipeView:decode:1018000
+O3PipeView:rename:1019000
+O3PipeView:dispatch:1027000
+O3PipeView:issue:1027000
+O3PipeView:complete:1028000
+O3PipeView:retire:1031000:store:0
+O3PipeView:fetch:928000:0x010053b7:1:695:  ADD_R_I : add   rdx, rdx, t1
+O3PipeView:decode:1018000
+O3PipeView:rename:1019000
+O3PipeView:dispatch:1026000
+O3PipeView:issue:1027000
+O3PipeView:complete:1028000
+O3PipeView:retire:1030000:store:0
+O3PipeView:fetch:928000:0x010053bb:0:696:  CMP_R_R : sub   t0, rdi, rdx
+O3PipeView:decode:1018000
+O3PipeView:rename:1019000
+O3PipeView:dispatch:1026000
+O3PipeView:issue:1028000
+O3PipeView:complete:1029000
+O3PipeView:retire:1031000:store:0
+O3PipeView:fetch:867000:0x010053a8:0:649:  MOV_M_R : st   sil, DS:[rdx + rcx + 0x5]
+O3PipeView:decode:914000
+O3PipeView:rename:915000
+O3PipeView:dispatch:923000
+O3PipeView:issue:923000
+O3PipeView:complete:924000
+O3PipeView:retire:926000:store:1035000
+O3PipeView:fetch:929000:0x010053be:1:698:  JNZ_I : limm   t2, 0xffffffffffffffd0
+O3PipeView:decode:1026000
+O3PipeView:rename:1027000
+O3PipeView:dispatch:1029000
+O3PipeView:issue:1029000
+O3PipeView:complete:1030000
+O3PipeView:retire:1032000:store:0
+O3PipeView:fetch:929000:0x010053be:2:699:  JNZ_I : wrip   t1, t2
+O3PipeView:decode:1026000
+O3PipeView:rename:1027000
+O3PipeView:dispatch:1029000
+O3PipeView:issue:1030000
+O3PipeView:complete:1031000
+O3PipeView:retire:1033000:store:0
+O3PipeView:fetch:880000:0x010053ad:0:650:  MOV_M_R : st   sil, DS:[rdx + rcx + 0x6]
+O3PipeView:decode:915000
+O3PipeView:rename:916000
+O3PipeView:dispatch:924000
+O3PipeView:issue:924000
+O3PipeView:complete:925000
+O3PipeView:retire:927000:store:1037000
+O3PipeView:fetch:880000:0x010053b2:0:651:  MOV_M_R : st   sil, DS:[rdx + rcx + 0x7]
+O3PipeView:decode:915000
+O3PipeView:rename:916000
+O3PipeView:dispatch:926000
+O3PipeView:issue:926000
+O3PipeView:complete:927000
+O3PipeView:retire:929000:store:1039000
+O3PipeView:fetch:885000:0x01005390:0:658:  MOV_M_R : st   sil, DS:[rdx + rcx]
+O3PipeView:decode:927000
+O3PipeView:rename:928000
+O3PipeView:dispatch:980000
+O3PipeView:issue:980000
+O3PipeView:complete:981000
+O3PipeView:retire:983000:store:1041000
+O3PipeView:fetch:885000:0x01005394:0:659:  MOV_M_R : st   sil, DS:[rdx + rcx + 0x1]
+O3PipeView:decode:927000
+O3PipeView:rename:928000
+O3PipeView:dispatch:982000
+O3PipeView:issue:982000
+O3PipeView:complete:983000
+O3PipeView:retire:985000:store:1043000
+O3PipeView:fetch:885000:0x01005399:0:660:  MOV_M_R : st   sil, DS:[rdx + rcx + 0x2]
+O3PipeView:decode:927000
+O3PipeView:rename:928000
+O3PipeView:dispatch:983000
+O3PipeView:issue:983000
+O3PipeView:complete:984000
+O3PipeView:retire:986000:store:1045000
+O3PipeView:fetch:885000:0x0100539e:0:661:  MOV_M_R : st   sil, DS:[rdx + rcx + 0x3]
+O3PipeView:decode:927000
+O3PipeView:rename:928000
+O3PipeView:dispatch:985000
+O3PipeView:issue:985000
+O3PipeView:complete:986000
+O3PipeView:retire:988000:store:1047000
+O3PipeView:fetch:996000:0x010053b7:0:708:  ADD_R_I : limm   t1, 0x8
+O3PipeView:decode:1030000
+O3PipeView:rename:1031000
+O3PipeView:dispatch:1041000
+O3PipeView:issue:1041000
+O3PipeView:complete:1042000
+O3PipeView:retire:1044000:store:0
+O3PipeView:fetch:996000:0x010053b7:1:709:  ADD_R_I : add   rdx, rdx, t1
+O3PipeView:decode:1030000
+O3PipeView:rename:1031000
+O3PipeView:dispatch:1041000
+O3PipeView:issue:1042000
+O3PipeView:complete:1043000
+O3PipeView:retire:1045000:store:0
+O3PipeView:fetch:895000:0x010053a3:0:662:  MOV_M_R : st   sil, DS:[rdx + rcx + 0x4]
+O3PipeView:decode:928000
+O3PipeView:rename:929000
+O3PipeView:dispatch:988000
+O3PipeView:issue:988000
+O3PipeView:complete:989000
+O3PipeView:retire:991000:store:1049000
+O3PipeView:fetch:997000:0x010053be:1:712:  JNZ_I : limm   t2, 0xffffffffffffffd0
+O3PipeView:decode:1040000
+O3PipeView:rename:1041000
+O3PipeView:dispatch:1043000
+O3PipeView:issue:1043000
+O3PipeView:complete:1044000
+O3PipeView:retire:1046000:store:0
+O3PipeView:fetch:997000:0x010053be:0:711:  JNZ_I : rdip   t1, t1
+O3PipeView:decode:1040000
+O3PipeView:rename:1041000
+O3PipeView:dispatch:1043000
+O3PipeView:issue:1043000
+O3PipeView:complete:1044000
+O3PipeView:retire:1046000:store:0
+O3PipeView:fetch:997000:0x010053bb:0:710:  CMP_R_R : sub   t0, rdi, rdx
+O3PipeView:decode:1040000
+O3PipeView:rename:1041000
+O3PipeView:dispatch:1043000
+O3PipeView:issue:1043000
+O3PipeView:complete:1044000
+O3PipeView:retire:1046000:store:0
+O3PipeView:fetch:997000:0x010053be:2:713:  JNZ_I : wrip   t1, t2
+O3PipeView:decode:1040000
+O3PipeView:rename:1041000
+O3PipeView:dispatch:1043000
+O3PipeView:issue:1044000
+O3PipeView:complete:1045000
+O3PipeView:retire:1047000:store:0
+O3PipeView:fetch:895000:0x010053a8:0:663:  MOV_M_R : st   sil, DS:[rdx + rcx + 0x5]
+O3PipeView:decode:928000
+O3PipeView:rename:929000
+O3PipeView:dispatch:990000
+O3PipeView:issue:990000
+O3PipeView:complete:991000
+O3PipeView:retire:993000:store:1051000
+O3PipeView:fetch:895000:0x010053ad:0:664:  MOV_M_R : st   sil, DS:[rdx + rcx + 0x6]
+O3PipeView:decode:928000
+O3PipeView:rename:929000
+O3PipeView:dispatch:992000
+O3PipeView:issue:992000
+O3PipeView:complete:993000
+O3PipeView:retire:995000:store:1053000
+O3PipeView:fetch:895000:0x010053b2:0:665:  MOV_M_R : st   sil, DS:[rdx + rcx + 0x7]
+O3PipeView:decode:928000
+O3PipeView:rename:929000
+O3PipeView:dispatch:994000
+O3PipeView:issue:994000
+O3PipeView:complete:995000
+O3PipeView:retire:997000:store:1055000
+O3PipeView:fetch:898000:0x01005390:0:672:  MOV_M_R : st   sil, DS:[rdx + rcx]
+O3PipeView:decode:994000
+O3PipeView:rename:995000
+O3PipeView:dispatch:997000
+O3PipeView:issue:998000
+O3PipeView:complete:999000
+O3PipeView:retire:1002000:store:1057000
+O3PipeView:fetch:898000:0x01005394:0:673:  MOV_M_R : st   sil, DS:[rdx + rcx + 0x1]
+O3PipeView:decode:994000
+O3PipeView:rename:995000
+O3PipeView:dispatch:997000
+O3PipeView:issue:998000
+O3PipeView:complete:999000
+O3PipeView:retire:1002000:store:1059000
+O3PipeView:fetch:898000:0x01005399:0:674:  MOV_M_R : st   sil, DS:[rdx + rcx + 0x2]
+O3PipeView:decode:996000
+O3PipeView:rename:997000
+O3PipeView:dispatch:1000000
+O3PipeView:issue:1000000
+O3PipeView:complete:1001000
+O3PipeView:retire:1003000:store:1061000
+O3PipeView:fetch:898000:0x0100539e:0:675:  MOV_M_R : st   sil, DS:[rdx + rcx + 0x3]
+O3PipeView:decode:996000
+O3PipeView:rename:997000
+O3PipeView:dispatch:1002000
+O3PipeView:issue:1002000
+O3PipeView:complete:1003000
+O3PipeView:retire:1005000:store:1063000
+O3PipeView:fetch:899000:0x010053a3:0:676:  MOV_M_R : st   sil, DS:[rdx + rcx + 0x4]
+O3PipeView:decode:996000
+O3PipeView:rename:997000
+O3PipeView:dispatch:1004000
+O3PipeView:issue:1004000
+O3PipeView:complete:1005000
+O3PipeView:retire:1007000:store:1065000
+O3PipeView:fetch:1011000:0x010053be:0:725:  JNZ_I : rdip   t1, t1
+O3PipeView:decode:1056000
+O3PipeView:rename:1057000
+O3PipeView:dispatch:1059000
+O3PipeView:issue:1059000
+O3PipeView:complete:1060000
+O3PipeView:retire:1064000:store:0
+O3PipeView:fetch:1011000:0x010053b7:0:722:  ADD_R_I : limm   t1, 0x8
+O3PipeView:decode:1056000
+O3PipeView:rename:1057000
+O3PipeView:dispatch:1059000
+O3PipeView:issue:1059000
+O3PipeView:complete:1060000
+O3PipeView:retire:1062000:store:0
+O3PipeView:fetch:1012000:0x010053be:1:726:  JNZ_I : limm   t2, 0xffffffffffffffd0
+O3PipeView:decode:1057000
+O3PipeView:rename:1058000
+O3PipeView:dispatch:1060000
+O3PipeView:issue:1060000
+O3PipeView:complete:1061000
+O3PipeView:retire:1064000:store:0
+O3PipeView:fetch:1011000:0x010053b7:1:723:  ADD_R_I : add   rdx, rdx, t1
+O3PipeView:decode:1056000
+O3PipeView:rename:1057000
+O3PipeView:dispatch:1059000
+O3PipeView:issue:1060000
+O3PipeView:complete:1061000
+O3PipeView:retire:1063000:store:0
+O3PipeView:fetch:899000:0x010053a8:0:677:  MOV_M_R : st   sil, DS:[rdx + rcx + 0x5]
+O3PipeView:decode:996000
+O3PipeView:rename:997000
+O3PipeView:dispatch:1006000
+O3PipeView:issue:1006000
+O3PipeView:complete:1007000
+O3PipeView:retire:1009000:store:1067000
+O3PipeView:fetch:1011000:0x010053bb:0:724:  CMP_R_R : sub   t0, rdi, rdx
+O3PipeView:decode:1056000
+O3PipeView:rename:1057000
+O3PipeView:dispatch:1059000
+O3PipeView:issue:1061000
+O3PipeView:complete:1062000
+O3PipeView:retire:1064000:store:0
+O3PipeView:fetch:1012000:0x010053be:2:727:  JNZ_I : wrip   t1, t2
+O3PipeView:decode:1057000
+O3PipeView:rename:1058000
+O3PipeView:dispatch:1060000
+O3PipeView:issue:1062000
+O3PipeView:complete:1063000
+O3PipeView:retire:1065000:store:0
+O3PipeView:fetch:912000:0x010053ad:0:678:  MOV_M_R : st   sil, DS:[rdx + rcx + 0x6]
+O3PipeView:decode:997000
+O3PipeView:rename:998000
+O3PipeView:dispatch:1008000
+O3PipeView:issue:1008000
+O3PipeView:complete:1009000
+O3PipeView:retire:1011000:store:1069000
+O3PipeView:fetch:912000:0x010053b2:0:679:  MOV_M_R : st   sil, DS:[rdx + rcx + 0x7]
+O3PipeView:decode:997000
+O3PipeView:rename:998000
+O3PipeView:dispatch:1009000
+O3PipeView:issue:1009000
+O3PipeView:complete:1010000
+O3PipeView:retire:1012000:store:1071000
+O3PipeView:fetch:917000:0x01005390:0:686:  MOV_M_R : st   sil, DS:[rdx + rcx]
+O3PipeView:decode:1009000
+O3PipeView:rename:1010000
+O3PipeView:dispatch:1012000
+O3PipeView:issue:1012000
+O3PipeView:complete:1013000
+O3PipeView:retire:1015000:store:1073000
+O3PipeView:fetch:917000:0x01005394:0:687:  MOV_M_R : st   sil, DS:[rdx + rcx + 0x1]
+O3PipeView:decode:1009000
+O3PipeView:rename:1010000
+O3PipeView:dispatch:1014000
+O3PipeView:issue:1014000
+O3PipeView:complete:1015000
+O3PipeView:retire:1017000:store:1075000
+O3PipeView:fetch:917000:0x01005399:0:688:  MOV_M_R : st   sil, DS:[rdx + rcx + 0x2]
+O3PipeView:decode:1009000
+O3PipeView:rename:1010000
+O3PipeView:dispatch:1016000
+O3PipeView:issue:1016000
+O3PipeView:complete:1017000
+O3PipeView:retire:1019000:store:1077000
+O3PipeView:fetch:917000:0x0100539e:0:689:  MOV_M_R : st   sil, DS:[rdx + rcx + 0x3]
+O3PipeView:decode:1009000
+O3PipeView:rename:1010000
+O3PipeView:dispatch:1018000
+O3PipeView:issue:1018000
+O3PipeView:complete:1019000
+O3PipeView:retire:1021000:store:1079000
+O3PipeView:fetch:1028000:0x010053b7:0:736:  ADD_R_I : limm   t1, 0x8
+O3PipeView:decode:1062000
+O3PipeView:rename:1063000
+O3PipeView:dispatch:1073000
+O3PipeView:issue:1073000
+O3PipeView:complete:1074000
+O3PipeView:retire:1076000:store:0
+O3PipeView:fetch:1028000:0x010053b7:1:737:  ADD_R_I : add   rdx, rdx, t1
+O3PipeView:decode:1062000
+O3PipeView:rename:1063000
+O3PipeView:dispatch:1073000
+O3PipeView:issue:1074000
+O3PipeView:complete:1075000
+O3PipeView:retire:1077000:store:0
+O3PipeView:fetch:927000:0x010053a3:0:690:  MOV_M_R : st   sil, DS:[rdx + rcx + 0x4]
+O3PipeView:decode:1017000
+O3PipeView:rename:1018000
+O3PipeView:dispatch:1020000
+O3PipeView:issue:1020000
+O3PipeView:complete:1021000
+O3PipeView:retire:1023000:store:1081000
+O3PipeView:fetch:1029000:0x010053be:1:740:  JNZ_I : limm   t2, 0xffffffffffffffd0
+O3PipeView:decode:1072000
+O3PipeView:rename:1073000
+O3PipeView:dispatch:1075000
+O3PipeView:issue:1075000
+O3PipeView:complete:1076000
+O3PipeView:retire:1078000:store:0
+O3PipeView:fetch:1029000:0x010053be:0:739:  JNZ_I : rdip   t1, t1
+O3PipeView:decode:1072000
+O3PipeView:rename:1073000
+O3PipeView:dispatch:1075000
+O3PipeView:issue:1075000
+O3PipeView:complete:1076000
+O3PipeView:retire:1078000:store:0
+O3PipeView:fetch:1029000:0x010053bb:0:738:  CMP_R_R : sub   t0, rdi, rdx
+O3PipeView:decode:1072000
+O3PipeView:rename:1073000
+O3PipeView:dispatch:1075000
+O3PipeView:issue:1075000
+O3PipeView:complete:1076000
+O3PipeView:retire:1078000:store:0
+O3PipeView:fetch:1029000:0x010053be:2:741:  JNZ_I : wrip   t1, t2
+O3PipeView:decode:1072000
+O3PipeView:rename:1073000
+O3PipeView:dispatch:1075000
+O3PipeView:issue:1076000
+O3PipeView:complete:1077000
+O3PipeView:retire:1079000:store:0
+O3PipeView:fetch:927000:0x010053a8:0:691:  MOV_M_R : st   sil, DS:[rdx + rcx + 0x5]
+O3PipeView:decode:1017000
+O3PipeView:rename:1018000
+O3PipeView:dispatch:1021000
+O3PipeView:issue:1021000
+O3PipeView:complete:1022000
+O3PipeView:retire:1024000:store:1083000
+O3PipeView:fetch:927000:0x010053ad:0:692:  MOV_M_R : st   sil, DS:[rdx + rcx + 0x6]
+O3PipeView:decode:1017000
+O3PipeView:rename:1018000
+O3PipeView:dispatch:1023000
+O3PipeView:issue:1023000
+O3PipeView:complete:1024000
+O3PipeView:retire:1026000:store:1085000
+O3PipeView:fetch:927000:0x010053b2:0:693:  MOV_M_R : st   sil, DS:[rdx + rcx + 0x7]
+O3PipeView:decode:1017000
+O3PipeView:rename:1018000
+O3PipeView:dispatch:1026000
+O3PipeView:issue:1026000
+O3PipeView:complete:1027000
+O3PipeView:retire:1029000:store:1087000
+O3PipeView:fetch:930000:0x01005390:0:700:  MOV_M_R : st   sil, DS:[rdx + rcx]
+O3PipeView:decode:1026000
+O3PipeView:rename:1027000
+O3PipeView:dispatch:1029000
+O3PipeView:issue:1029000
+O3PipeView:complete:1030000
+O3PipeView:retire:1033000:store:1089000
+O3PipeView:fetch:930000:0x01005394:0:701:  MOV_M_R : st   sil, DS:[rdx + rcx + 0x1]
+O3PipeView:decode:1026000
+O3PipeView:rename:1027000
+O3PipeView:dispatch:1030000
+O3PipeView:issue:1030000
+O3PipeView:complete:1031000
+O3PipeView:retire:1033000:store:1091000
+O3PipeView:fetch:930000:0x01005399:0:702:  MOV_M_R : st   sil, DS:[rdx + rcx + 0x2]
+O3PipeView:decode:1029000
+O3PipeView:rename:1030000
+O3PipeView:dispatch:1032000
+O3PipeView:issue:1032000
+O3PipeView:complete:1033000
+O3PipeView:retire:1035000:store:1093000
+O3PipeView:fetch:930000:0x0100539e:0:703:  MOV_M_R : st   sil, DS:[rdx + rcx + 0x3]
+O3PipeView:decode:1029000
+O3PipeView:rename:1030000
+O3PipeView:dispatch:1034000
+O3PipeView:issue:1034000
+O3PipeView:complete:1035000
+O3PipeView:retire:1037000:store:1095000
+O3PipeView:fetch:931000:0x010053a3:0:704:  MOV_M_R : st   sil, DS:[rdx + rcx + 0x4]
+O3PipeView:decode:1029000
+O3PipeView:rename:1030000
+O3PipeView:dispatch:1036000
+O3PipeView:issue:1036000
+O3PipeView:complete:1037000
+O3PipeView:retire:1039000:store:1097000
+O3PipeView:fetch:1043000:0x010053be:0:753:  JNZ_I : rdip   t1, t1
+O3PipeView:decode:1088000
+O3PipeView:rename:1089000
+O3PipeView:dispatch:1091000
+O3PipeView:issue:1091000
+O3PipeView:complete:1092000
+O3PipeView:retire:1096000:store:0
+O3PipeView:fetch:1043000:0x010053b7:0:750:  ADD_R_I : limm   t1, 0x8
+O3PipeView:decode:1088000
+O3PipeView:rename:1089000
+O3PipeView:dispatch:1091000
+O3PipeView:issue:1091000
+O3PipeView:complete:1092000
+O3PipeView:retire:1094000:store:0
+O3PipeView:fetch:1044000:0x010053be:1:754:  JNZ_I : limm   t2, 0xffffffffffffffd0
+O3PipeView:decode:1089000
+O3PipeView:rename:1090000
+O3PipeView:dispatch:1092000
+O3PipeView:issue:1092000
+O3PipeView:complete:1093000
+O3PipeView:retire:1096000:store:0
+O3PipeView:fetch:1043000:0x010053b7:1:751:  ADD_R_I : add   rdx, rdx, t1
+O3PipeView:decode:1088000
+O3PipeView:rename:1089000
+O3PipeView:dispatch:1091000
+O3PipeView:issue:1092000
+O3PipeView:complete:1093000
+O3PipeView:retire:1095000:store:0
+O3PipeView:fetch:931000:0x010053a8:0:705:  MOV_M_R : st   sil, DS:[rdx + rcx + 0x5]
+O3PipeView:decode:1029000
+O3PipeView:rename:1030000
+O3PipeView:dispatch:1038000
+O3PipeView:issue:1038000
+O3PipeView:complete:1039000
+O3PipeView:retire:1041000:store:1099000
+O3PipeView:fetch:1043000:0x010053bb:0:752:  CMP_R_R : sub   t0, rdi, rdx
+O3PipeView:decode:1088000
+O3PipeView:rename:1089000
+O3PipeView:dispatch:1091000
+O3PipeView:issue:1093000
+O3PipeView:complete:1094000
+O3PipeView:retire:1096000:store:0
